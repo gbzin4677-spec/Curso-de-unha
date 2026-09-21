@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curso de Alongamento</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff5fa;
+            color: #333;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #ff4fae, #ff7bc4);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        /* CONTAINER */
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* CARDS */
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+        }
+
+        .card h2 {
+            color: #d91b91;
+            font-size: 29px;
+            margin-bottom: 20px;
+        }
+
+        /* MATERIAIS */
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            font-size: 19px;
+            margin: 10px 0;
+        }
+
+        /* LINKS DOS PASSOS */
+
+        .passo-link {
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .passo {
+            background: #fff0f7;
+            border-left: 6px solid #f05aaa;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 14px;
+            transition: 0.2s;
+        }
+
+        .passo:hover {
+            transform: translateX(5px);
+            background: #ffe2f1;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .passo h3 {
+            color: #d91b91;
+            font-size: 21px;
+            margin-bottom: 7px;
+        }
+
+        .passo p {
+            font-size: 17px;
+            line-height: 1.4;
+        }
+
+        .clique {
+            display: block;
+            color: #e51b91;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* CHAT */
+
+        .chat h2 {
+            margin-bottom: 10px;
+        }
+
+        .chat-intro {
+            font-size: 17px;
+            margin-bottom: 15px;
+        }
+
+        #conversa {
+            height: 280px;
+            overflow-y: auto;
+            background: #fff5fa;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .mensagem {
+            padding: 12px 15px;
+            border-radius: 15px;
+            margin-bottom: 12px;
+            max-width: 90%;
+            line-height: 1.4;
+            font-size: 16px;
+        }
+
+        .cliente {
+            background: #f8b4d8;
+            margin-left: auto;
+        }
+
+        .assistente {
+            background: white;
+            border: 1px solid #f2c2dd;
+        }
+
+        .entrada {
+            display: flex;
+            gap: 10px;
+        }
+
+        #pergunta {
+            flex: 1;
+            border: 2px solid #f3a4d0;
+            border-radius: 12px;
+            padding: 14px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        #pergunta:focus {
+            border-color: #e51b91;
+        }
+
+        #enviar {
+            background: #f20b91;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 14px 20px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        #enviar:hover {
+            background: #d9007d;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 31px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            .card {
+                padding: 23px;
+            }
+
+            .card h2 {
+                font-size: 27px;
+            }
+
+            .entrada {
+                flex-direction: column;
+            }
+
+            #enviar {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>💎 Curso de Alongamento</h1>
+
+        <p>
+            Aprenda alongamento passo a passo
+        </p>
+
+    </header>
+
+
+    <main class="container">
+
+
+        <!-- MATERIAIS -->
+
+        <section class="card">
+
+            <h2>🛍️ Materiais Necessários</h2>
+
+            <ul>
+
+                <li>Fibra de vidro</li>
+
+                <li>Gel para unhas</li>
+
+                <li>Cabine UV/LED</li>
+
+                <li>Lixa de unha</li>
+
+                <li>Desidratador</li>
+
+                <li>Primer</li>
+
+                <li>Base em gel</li>
+
+                <li>Pincel para gel</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- PASSO A PASSO -->
+
+        <section class="card">
+
+            <h2>📚 Passo a Passo</h2>
+
+
+            <!-- PASSO 1 -->
+
+            <a
+                class="passo-link"
+                href="https://www.youtube.com/watch?v=TaEIlcPYyU8"
+                target="_blank"
+            >
+
+                <div class="passo">
+
+                    <h3>
+                        1️⃣ Prepare as unhas
+                    </h3>
+
+                    <p>
+                        Aprenda como preparar corretamente as unhas antes do alongamento.
+                    </p>
+
+                    <span class="clique">
+                        ▶️ Clique para assistir ao vídeo
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- PASSO 2 -->
+
+            <a
+                class="passo-link"
+                href="https://www.youtube.com/watch?v=414qrRdjO0A"
+                target="_blank"
+            >
+
+                <div class="passo">
+
+                    <h3>
+                        2️⃣ Prepare a fibra
+                    </h3>
+
+                    <p>
+                        Aprenda a medir e posicionar a fibra corretamente.
+                    </p>
+
+                    <span class="clique">
+                        ▶️ Clique para assistir ao vídeo
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- PASSO 3 -->
+
+            <a
+                class="passo-link"
+                href="https://www.youtube.com/watch?v=414qrRdjO0A"
+                target="_blank"
+            >
+
+                <div class="passo">
+
+                    <h3>
+                        3️⃣ Aplique o gel
+                    </h3>
+
+                    <p>
+                        Veja como aplicar o gel de maneira correta.
+                    </p>
+
+                    <span class="clique">
+                        ▶️ Clique para assistir ao vídeo
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- PASSO 4 -->
+
+            <a
+                class="passo-link"
+                href="https://www.youtube.com/watch?v=414qrRdjO0A"
+                target="_blank"
+            >
+
+                <div class="passo">
+
+                    <h3>
+                        4️⃣ Faça a cura
+                    </h3>
+
+                    <p>
+                        Aprenda como fazer a cura do gel na cabine UV/LED.
+                    </p>
+
+                    <span class="clique">
+                        ▶️ Clique para assistir ao vídeo
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- PASSO 5 -->
+
+            <a
+                class="passo-link"
+                href="https://www.youtube.com/watch?v=414qrRdjO0A"
+                target="_blank"
+            >
+
+                <div class="passo">
+
+                    <h3>
+                        5️⃣ Modele a unha
+                    </h3>
+
+                    <p>
+                        Aprenda a lixar e dar o formato correto para a unha.
+                    </p>
+
+                    <span class="clique">
+                        ▶️ Clique para assistir ao vídeo
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!-- PASSO 6 -->
+
+            <a
+                class="passo-link"
+                href="https://www.youtube.com/watch?v=414qrRdjO0A"
+                target="_blank"
+            >
+
+                <div class="passo">
+
+                    <h3>
+                        6️⃣ Finalização
+                    </h3>
+
+                    <p>
+                        Aprenda a fazer o acabamento final do alongamento.
+                    </p>
+
+                    <span class="clique">
+                        ▶️ Clique para assistir ao vídeo
+                    </span>
+
+                </div>
+
+            </a>
+
+
+        </section>
+
+
+        <!-- ÁREA DE PERGUNTAS -->
+
+        <section class="card chat">
+
+            <h2>
+                💬 Tire suas dúvidas
+            </h2>
+
+            <p class="chat-intro">
+                Ficou com alguma dúvida? Pergunte para nossa assistente virtual.
+            </p>
+
+
+            <div id="conversa">
+
+                <div class="mensagem assistente">
+
+                    💗 Olá! Sou a assistente da Academia das Unhas.
+                    Pode perguntar sobre qualquer etapa do curso!
+
+                </div>
+
+            </div>
+
+
+            <div class="entrada">
+
+                <input
+                    type="text"
+                    id="pergunta"
+                    placeholder="Digite sua pergunta..."
+                >
+
+                <button
+                    id="enviar"
+                    onclick="enviarPergunta()"
+                >
+                    Enviar
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        © 2026 Academia das Unhas 💅
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        async function enviarPergunta() {
+
+            const campo =
+                document.getElementById("pergunta");
+
+            const conversa =
+                document.getElementById("conversa");
+
+            const botao =
+                document.getElementById("enviar");
+
+
+            const pergunta =
+                campo.value.trim();
+
+
+            if (!pergunta) {
+                return;
+            }
+
+
+            /* PERGUNTA DO CLIENTE */
+
+            const cliente =
+                document.createElement("div");
+
+            cliente.className =
+                "mensagem cliente";
+
+            cliente.innerText =
+                "👩 " + pergunta;
+
+            conversa.appendChild(cliente);
+
+
+            campo.value = "";
+
+
+            /* DESABILITA BOTÃO */
+
+            botao.disabled = true;
+
+            botao.innerText =
+                "Respondendo...";
+
+
+            /* RESPOSTA */
+
+            const resposta =
+                document.createElement("div");
+
+            resposta.className =
+                "mensagem assistente";
+
+            resposta.innerText =
+                "💗 Estou preparando sua resposta...";
+
+            conversa.appendChild(resposta);
+
+
+            conversa.scrollTop =
+                conversa.scrollHeight;
+
+
+            try {
+
+                const resultado =
+                    await fetch(
+                        "/api/perguntar",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+
+                            body: JSON.stringify({
+                                pergunta: pergunta
+                            })
+                        }
+                    );
+
+
+                const dados =
+                    await resultado.json();
+
+
+                if (!resultado.ok) {
+
+                    throw new Error(
+                        dados.erro ||
+                        "Erro ao responder."
+                    );
+
+                }
+
+
+                resposta.innerText =
+                    "💗 " + dados.resposta;
+
+
+            } catch (erro) {
+
+                resposta.innerText =
+                    "❌ Não consegui responder agora. Tente novamente.";
+
+                console.error(erro);
+
+            }
+
+
+            botao.disabled = false;
+
+            botao.innerText =
+                "Enviar";
+
+
+            conversa.scrollTop =
+                conversa.scrollHeight;
+
+        }
+
+
+        /* ENTER PARA ENVIAR */
+
+        document
+            .getElementById("pergunta")
+            .addEventListener(
+                "keydown",
+                function(event) {
+
+                    if (event.key === "Enter") {
+
+                        enviarPergunta();
+
+                    }
+
+                }
+            );
+
+    </script>
+
+
+</body>
+
+</html>
